@@ -14,7 +14,7 @@ class VideoDetailsFormProvider{
         $privacyInput= $this->createPrivacyInput();
         $categoriesInput = $this->createCategoriesInput();     
         $uploadButton = $this->createUploadButton();  
-         return "<form action='processing.php' method='POST'>
+         return "<form action='processing.php' method='POST' enctype='multipart/form-data'>
                     $fileInput 
                     $titleInput
                     $descriptionInput
@@ -28,7 +28,7 @@ class VideoDetailsFormProvider{
 
         return "<div class='form-group'>
                    <!-- <label for='exampleFormControlFile1'>Your file</label>-->
-                    <input type='file' class='form-control-file' id='exampleFormControlFile1' name='fieInput' required>
+                    <input type='file' class='form-control' id='exampleFormControlFile1' name='fileInput' required>
                 </div>";
     }
 

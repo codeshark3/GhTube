@@ -26,8 +26,7 @@ require_once("includes/config.php")
        <div class="searchBarContainer">
            <form action="search.php" method="GET">
                <input type="text" class="searchBar" name="term" placeholder="Search...">
-                <button class="searchButton"><img src="assets/images/icons/sea
-                rch.png"/></button>
+                <button class="searchButton"><img src="assets/images/icons/search.png"/></button>
 
            </form>
        </div>
